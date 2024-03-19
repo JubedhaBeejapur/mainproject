@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management System</title>
+    <link rel="icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/85/99/59/85995914-780b-e6a0-5d99-f305784e0d4e/source/512x512bb.jpg ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        div{
+            display: inline-flex;
+            justify-content: space-between;
+            width: 900px;
+            position: relative;
+            top: -50px;
+            left: 180px;
+        }
+        .nava{
+            text-decoration: none;
+            color:white;
+            position: relative;
+            top: 20px;
+            font-size: 20px;
+        }
+        nav{
+            justify-content: space-between;
+            border: 1px solid gray;
+            box-shadow: 0px 0px 10px gainsboro;
+            background-color: cadetblue;
+            font-size: 30px;
+            
+        }
+        .m{
+            border-radius: 100%;
+            position: relative;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav style="height: 80px; width: 1400px;">
+        <img class="m" src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/85/99/59/85995914-780b-e6a0-5d99-f305784e0d4e/source/512x512bb.jpg" height="80px" width="80px">
+            <div>
+                <a class="nava" href="{% url 'phome' %}"><i class="fa-solid fa-house"></i>Home</a>
+                <a class="nava" href="{% url 'phospital' %}"><i class="fa-solid fa-hospital"></i>Hospital</a>
+                <a class="nava" href="{% url 'pbloodbank' %}"><i class="fa-solid fa-droplet"></i>Blood Bank</a>
+                <a class="nava" href="{% url 'pprofile' %}"><i class="fa-solid fa-user"></i>Appointment</a>
+                <a class="nava" href="{% url 'pregister' %}"><i class="fa-solid fa-house-medical"></i>Register</a>
+                <a class="nava" href="{% url 'plogin' %}"><i class="fa-solid fa-house-medical-circle-check"></i></i>Login</a>
+            </div>
+    </nav>  
+    <br><br>
+    <section>
+        {% for i in data %}
+        <span style="font-size: 20px; font-weight: bold;">
+            Hospital Name:{{i.name}} <br>
+            Contact No:{{i.contact_no}} <br>
+            Special Treatment:{{i.specialy}} <br>
+            Address:{{i.address}} <br><br> <br><br>
+        </span>
+        {% endfor %}
+    </section>
+</body>
+</html>

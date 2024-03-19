@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management System</title>
+    <link rel="icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/85/99/59/85995914-780b-e6a0-5d99-f305784e0d4e/source/512x512bb.jpg ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .nava{
+            text-decoration: none;
+            color:white;
+            position: relative;
+            top: -25px;
+            left: 120px;
+            font-size: 20px;
+        }
+        nav{
+            justify-content: space-between;
+            border: 1px solid gray;
+            box-shadow: 0px 0px 10px gainsboro;
+            background-color: cadetblue;
+            font-size: 30px;
+            
+        }
+        .m{
+            position: relative;
+            left: 80px;
+            border-radius: 100%;
+        }
+        #sub-nav{
+            position: relative;
+            top: -40px;
+            left: 120px;
+        }
+    </style>
+</head>
+<body>
+    <nav style="height: 80px; ">
+        <div>
+            <img class="m" src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/85/99/59/85995914-780b-e6a0-5d99-f305784e0d4e/source/512x512bb.jpg" height="80px" width="80px">
+            <section id="sub-nav">
+                <a  class="nava" href="{% url 'phome' %}"><i class="fa-solid fa-house"></i>Home</a>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                <a  class="nava" href="{% url 'phospital' %}"><i class="fa-solid fa-hospital"></i>Hospital</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="nava" href="{% url 'pbloodbank' %}"><i class="fa-solid fa-droplet"></i>Blood Bank</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a  class="nava" href="{% url 'pprofile' %}"><i class="fa-solid fa-user"></i>Appointment</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="nava" href="{% url 'pregister' %}"><i class="fa-solid fa-house-medical"></i>Register</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="nava" href="{% url 'plogin' %}"><i class="fa-solid fa-house-medical-circle-check"></i></i>Login</a>
+            </section>
+        </div>
+    </nav>
+<br><br>
+    <h1 style="color:brown;">Blood Bank's Information</h1>
+    <div>
+        {% for i in data %}
+        <span style="font-weight: bold; font-size: 20px;">Name: {{i.name}}</span> <br>
+        <span style="font-weight: bold;font-size: 20px;">Contact Number: {{i.phone_no}}</span><br>
+        <span style="font-weight: bold;font-size: 20px;">Address: {{i.address}}</span><br> <br>
+        <a href="{% url 'hblood' %}"><button style="font-size: 15px;">To Find Blood</button></a>  <br><br><br>
+        {% endfor %}
+    </div>
+    <section style="display: inline-flex;position: relative; top:-650px; margin-left: 750px;">
+        <img style="border-radius: 50%;" src="https://www.gkh.co.in/files/abstract-images/blood_bank_581151803.jpg" alt="">
+    </section>
+</body>
+</html>

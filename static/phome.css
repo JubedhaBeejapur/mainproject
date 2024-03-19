@@ -1,0 +1,126 @@
+body{
+    overflow-x: hidden;
+}
+.nava{
+    text-decoration: none;
+    color:white;
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+nav{
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 10px gainsboro;
+    background-color: cadetblue;
+    font-size: 30px;
+    width: 100%;
+}
+.m{
+    position: relative;
+    left: -50px;
+}
+h1{
+    color: blue;
+    position: relative;
+    left: 600px;
+    font-size: 50px;
+}
+img{
+    border-radius: 200px;
+}
+.t{
+    position: relative;
+    bottom: 250px;
+    left: 320px;
+    font-size: 24px;
+}
+h2{
+    color: palevioletred;
+    position: relative;
+    bottom: 280px;
+    left: 330px;
+    font-size: 30px;
+}
+#v{
+    border-radius: 100px;
+    position: relative;
+    bottom: 120px;
+    left: 850px;
+}
+h3{
+    color:red;
+    position: relative;
+    bottom: 450px;
+    left: 100px;
+    font-size: 40px;
+}
+#s{
+    position:relative;
+    bottom:430px;
+    left: 20px;
+    font-size: 24px;
+}
+h4{
+    color:rgb(243, 10, 243);
+    position: relative;
+    bottom: 400px;
+    left: 400px;
+    font-size: 30px;
+}
+.r{
+    position: relative;
+    bottom: 730px;
+    left: 400px;
+    font-size: 26px;
+    
+}
+footer{
+    height: 100px;
+    background-color:black;
+    position: relative;
+    bottom: 400px;
+}
+div{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+h6{
+    font-size: 40px;
+    position: relative;
+    bottom: 640px;
+    left: 80px;
+    color: chocolate;
+}
+#p{
+    position:relative;
+    bottom:690px;
+    left: 20px;
+    font-size: 24px;
+}
+#t{
+    position:relative;
+    bottom:900px;
+    left: 850px;
+}
+#f{
+    position:relative;
+    bottom:600px;
+    left: -220px;
+}
+h5{
+    font-size: 40px;
+    position: relative;
+    bottom: 900px;
+    left: 380px;
+    color: darkcyan;
+}
+#q{
+    position:relative;
+    bottom:940px;
+    left: 390px;
+    font-size:24px;
+}

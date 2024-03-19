@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management System</title>
+    <link rel="icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/85/99/59/85995914-780b-e6a0-5d99-f305784e0d4e/source/512x512bb.jpg ">
+    <link rel="stylesheet" href="{% static 'phome.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        div{
+            display: inline-flex;
+            justify-content: space-between;
+            width: 900px;
+            position: relative;
+            top: -50px;
+            left: 180px;
+        }
+        .nava{
+            text-decoration: none;
+            color:white;
+            position: relative;
+            top: 20px;
+            font-size: 20px;
+        }
+        nav{
+            justify-content: space-between;
+            border: 1px solid gray;
+            box-shadow: 0px 0px 10px gainsboro;
+            background-color: cadetblue;
+            font-size: 30px;
+            
+        }
+        .m{
+            border-radius: 100%;
+            position: relative;
+            /* left: 50px; */
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <nav style="height: 80px; width: 1400px;">
+        <img class="m" src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/85/99/59/85995914-780b-e6a0-5d99-f305784e0d4e/source/512x512bb.jpg" height="80px" width="80px">
+            <div>
+                <a class="nava" href="{% url 'phome' %}"><i class="fa-solid fa-house"></i>Home</a>
+                <a class="nava" href="{% url 'phospital' %}"><i class="fa-solid fa-hospital"></i>Hospital</a>
+                <a class="nava" href="{% url 'pbloodbank' %}"><i class="fa-solid fa-droplet"></i>Blood Bank</a>
+                <a class="nava" href="{% url 'pprofile' %}"><i class="fa-solid fa-user"></i>Appointment</a>
+                <a class="nava" href="{% url 'pregister' %}"><i class="fa-solid fa-house-medical"></i>Register</a>
+                <a class="nava" href="{% url 'plogin' %}"><i class="fa-solid fa-house-medical-circle-check"></i></i>Login</a>
+            </div>
+    </nav>
+    <h1>About Diseases</h1>
+    <img src="https://naturesfieldng.com/wp-content/uploads/2021/02/cancer-cells-image.jpg" height="250px" width="250px">
+    <h2>CANCER</h2>
+    <p class="t">Cancer is a disease in which some of the body's cells grow uncontrollably <br> and spread to other parts of the body Cancer can start almost anywhere in the <br> human body, which is made up of trillions of cells.Sometimes this orderly <br> process breaks down, and abnormal or damaged cells grow and multiply when <br> they shouldnt.These cells may form tumors, which are lumps of tissue.</p>
+    <img id="v" src="https://cdn.synappsehealth.com/res-prod/img/blog/articles/hiv.png" height="250px" width="250px">
+    <h3>HIV(Human immunodeficiency virus)</h3>
+    <p id="s">HIV (human immunodeficiency virus) is a virus that attacks the body <br> immune system. If HIV is not treated it can lead to AIDS <br> (acquired immunodeficiency syndrome).There is currently no effective Once <br> people get HIV, they have it for life.
+    But with proper medical care, HIV can be <br> controlled.People with HIV who get effective  HIV treatment can live long,healthy <br>lives and protect their partners.</p>
+    <h4>DIABETES</h4>
+    <img id="s" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpCPmPY9P8sZCOufpGIoVaFCeQb2U5AvRWpw&usqp=CAU" height="300px" width="300px">
+    <p class="r">Diabetes is a chronic disease that occurs either when the pancreas <br> does not produce enough insulin or when the body cannot effectively use <br> the insulin it produces Insulin is a hormone that regulates blood glucose. <br>Hyperglycaemia, also called raised blood glucose or raised blood sugar, <br> is a common effect of uncontrolled diabetes and over time leads to serious <br> damage to many of the body's systems, especially the nerves and blood vessels.</p>
+    <h6>CHICHENPOX</h6>
+    <p id="p">Chickenpox is a highly contagious disease caused by the varicella-zoster <br>virus (VZV).Chickenpox is a highly contagious disease caused by the <br> varicella-zoster virus (VZV). It can cause an itchy, blister-like rash among <br> other symptoms. The rash first appears on the chest, back, and face, and <br> then spreads over the entire body.chickenpox or gotten the chickenpox vaccine <br> can get the disease. Chickenpox illness usually lasts about 4 to 7 days</p>
+    <img id="t" src="https://cdn-community.pressidium.com/wp-content/uploads/2019/09/Chicken-Pox-2.jpg" height="250px" width="250px">
+    <img id="f" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPYIyWxMXqbBm4cAAZBaTDZNE_9xJh6FIzeA&usqp=CAU"  height="250px" width="250px" >
+    <h5>MALARIA</h5>
+    <p id="q">Malaria is a mosquito-borne disease caused by a parasite. People with malaria <br> often experience fever, chills, and flu-like illness. Left untreated, they may develop <br> severe complications and die. Malaria is a serious disease caused by  a parasite <br> that infects a certain type of mosquito.
+        Most people get malaria from  the bite <br> of an infective mosquito.
+        Malaria can be a deadly disease if not diagnosed and <br> treated quickly.Starting treatment as soon as possible can often prevent severe illness and <br> death.
+    </p>
+</body>
+</html>

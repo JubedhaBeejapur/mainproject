@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management System</title>
+    <link rel="icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/85/99/59/85995914-780b-e6a0-5d99-f305784e0d4e/source/512x512bb.jpg ">
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button>Submit</button>
+    </form>
+</body>
+</html>
